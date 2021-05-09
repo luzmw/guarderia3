@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @PrimaryKeyJoinColumn(name = "idAnimal")
-public class Ave extends Animal{
+public class Ave extends Animal {
     private int cantidadAlas;
 
     public int getCantidadAlas() {
@@ -15,3 +15,4 @@ public class Ave extends Animal{
         this.cantidadAlas = cantidadAlas;
     }
 }
+
