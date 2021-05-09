@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.company.AnimalesEntity" table="animales" schema="guarderiaconhibernate">
+        <id name="idAnimal">
+            <column name="idAnimal" sql-type="int"/>
+        </id>
+        <property name="nombre">
+            <column name="nombre" sql-type="varchar(45)" length="45" not-null="true"/>
+        </property>
+        <property name="edad">
+            <column name="edad" sql-type="int" not-null="true"/>
+        </property>
+        <property name="cantidadpatas">
+            <column name="cantidadpatas" sql-type="int" not-null="true"/>
+        </property>
+        <property name="animalescol">
+            <column name="animalescol" sql-type="varchar(45)" length="45" not-null="true"/>
+        </property>
+        <property name="colorplumas">
+            <column name="colorplumas" sql-type="varchar(45)" length="45" not-null="true"/>
+        </property>
+        <property name="largoescamas">
+            <column name="largoescamas" sql-type="varchar(45)" length="45" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
